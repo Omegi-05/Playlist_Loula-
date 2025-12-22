@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/png" href="images_etoiles/etoiles_star_1.png">
+    <title>Ma Playlist</title>
+
+    <!-- Style pour le fond en grille avec la DA-->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        .grid-background {
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(255, 255, 255);
+            background-image: 
+                linear-gradient(to right, #000000 1px, transparent 1px),
+                linear-gradient(to bottom, #000000 1px, transparent 1px);
+            background-size: 40px 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+<body>
+
+        <!--chargéééééé chargéééé-->
+        <div class="loader-wrapper" id="loader">
+        <div class="loader"></div>
+        <div class="loader-text"> ☻ Ma Playlist ☻</div>
+        <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+        </div>
+        </div>
+
+    <div class="grid-background"></div>
+
+
+</body>
+</html>
