@@ -1,49 +1,84 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="script.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" type="image/png" href="images_etoiles/etoiles_star_1.png">
-    <title>Ma Playlist</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="images_etoiles/etoiles_star_1.png"
+    />
+    <title>My Playlist ✧</title>
+  </head>
+  <body>
+    <img
+      src="images_etoiles/etoiles_star_1.png"
+      alt="Étoile"
+      class="etoiles_star_1"
+      id="star1"
+    />
+    <img
+      src="images_etoiles/etoiles_star_2.png"
+      alt="Étoile"
+      class="etoiles_star_2"
+      id="star2"
+    />
+    <img
+      src="images_etoiles/etoiles_star_3.png"
+      alt="Étoile"
+      class="etoiles_star_3"
+      id="star3"
+    />
+    <img
+      src="images_etoiles/etoiles_star_4.png"
+      alt="Étoile"
+      class="etoiles_star_4"
+      id="star4"
+    />
 
-    <!-- Style pour le fond en grille avec la DA-->
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        
-        .grid-background {
-            width: 100vw;
-            height: 100vh;
-            background-color: rgb(255, 255, 255);
-            background-image: 
-                linear-gradient(to right, #000000 1px, transparent 1px),
-                linear-gradient(to bottom, #000000 1px, transparent 1px);
-            background-size: 40px 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
-
-</head>
-<body>
-
-        <!--chargéééééé chargéééé-->
-        <div class="loader-wrapper" id="loader">
-        <div class="loader"></div>
-        <div class="loader-text"> ☻ Ma Playlist ☻</div>
-        <div class="progress-bar">
+    <!--chargéééééé chargéééé-->
+    <div class="loader-wrapper" id="loader">
+      <div class="loader"></div>
+      <div class="loader-text">☻ Ma Playlist ☻</div>
+      <div class="progress-bar">
         <div class="progress-fill" id="progressFill"></div>
-        </div>
-        </div>
+      </div>
+    </div>
 
+    <!--les boutons qui réagisse au click qui fait jouer l'audio-->
+
+    <div class="container">
+      <div class="grid">
+
+        <button id="button0" class="button" onclick="playAudio(0)">
+          <img class="button-image" src="images_etoiles/Freddie_Dredd.jpeg" id="Freddie_Dredd" />
+        </button>
+
+        <button id="button1" class="button" onclick="playAudio(1)">
+          <img class="button-image" src="images_etoiles/Lumi_Athena.jpeg" id="Lumi_Athena" />
+        </button>
+
+        <button id="button2" class="button" onclick="playAudio(2)">
+          <img class="button-image" src="images_etoiles/Big_Poppa.jpeg" id="Big_Poppa" />
+        </button>
+
+        <button id="button3" class="button" onclick="playAudio(3)">
+          <img class="button-image" src="images_etoiles/Ayasa.jpeg" id="Ayasa" />
+        </button>
+
+        <button id="button4" class="button" onclick="playAudio(4)">
+          <img class="button-image" src="images_etoiles/Mac_Demarco.jpeg" id="Mac_Demarco" />
+        </button>
+
+        <button id="button5" class="button" onclick="playAudio(5)">
+          <img class="button-image" src="images_etoiles/Vanille.jpeg" id="Vanille" />
+        </button>
+
+      </div>
+    </div>
+    <!--pour mes grilles en fonds 😭😭-->
     <div class="grid-background"></div>
-
-
-</body>
+  </body>
 </html>
