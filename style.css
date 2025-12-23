@@ -2,11 +2,13 @@
 /*chargement du début juste pour prouver que g copier-coller de mon portfolio*/
 
 body {
+  display: flex;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: rgb(255, 255, 255);
   transition: background-color 0.5s ease;
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1054.cur), auto;
 }
 
 /* Style pour le fond en grille avec la DA*/
@@ -19,7 +21,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: url("images_etoiles/mouse_star_souris.png"), pointer;
 }
 
 .loader-wrapper {
@@ -98,6 +99,7 @@ body {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
+/*les etoiles on été faites sur Adobe Illustrator =￣ω￣= */
 /*les etoiles, etoile 1 avec 5 branches*/
 .etoiles_star_1 {
   left: 20px;
@@ -110,11 +112,11 @@ body {
 @keyframes disparait {
   0%,
   100% {
-    opacity: 1;
+    opacity: 0.5;
     transform: scale(1);
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.1;
     transform: scale(1.2);
   }
 }
@@ -122,7 +124,7 @@ body {
 /*etoile 2 a 4 branches*/
 .etoiles_star_2 {
   right: 20px;
-  top: 10px;
+  top: 200px;
   position: absolute;
   width: 150px;
   height: 150px;
@@ -137,7 +139,7 @@ body {
     transform: scale(1);
   }
   50% {
-    opacity: 0.9;
+    opacity: 0.7;
     transform: scale(1.2);
   }
 }
@@ -156,12 +158,12 @@ body {
 @keyframes disparait3 {
   0%,
   100% {
-    opacity: 1;
+    opacity: 0.5;
     transform: scale(1);
     rotate: -25deg;
   }
   50% {
-    opacity: 0.8;
+    opacity: 1;
     transform: scale(1.3);
     rotate: -35deg;
   }
@@ -219,8 +221,11 @@ body {
   object-fit: cover;
   cursor: pointer;
   transition: transform 0.3s ease;
-  border: 3px solid rgb(0, 0, 0);
+  border: 3px solid rgb(255, 255, 255);
+      cursor: url("https://cur.cursors-4u.net/cursors/cur-11/cur1051.cur") 24 24, pointer;
+/* ptit tips de lien cursuer ("https://cur.cursors-4u.net/cursors/cur-11/cur1051.cur")*/
 }
+
 .button {
   width: 300px;
   height: 300px;
@@ -228,8 +233,7 @@ body {
   border-radius: 20px;
   border: none;
   transition: transform 0.3s ease;
-  cursor: url("images_etoiles/mouse_star_souris.png"), pointer;
-
+    cursor: url("https://cur.cursors-4u.net/cursors/cur-11/cur1051.cur") 50 50, pointer;
 }
 
 .button:hover {
@@ -239,3 +243,26 @@ body {
 .button:active {
   transform: scale(0.9);
 }
+
+#Freddie_Dredd:hover {
+   box-shadow: 0PX 0px 20px #401C18; 
+}
+
+#Lumi_Athena:hover {
+   box-shadow: 0PX 0px 20px #101010; 
+}
+#Big_Poppa:hover {
+   box-shadow: 0PX 0px 20px #F02F36; 
+}
+#Ayasa:hover {
+   box-shadow: 0PX 0px 20px #F3862B; 
+}
+#Mac_Demarco:hover {
+   box-shadow: 0PX 0px 20px #647891; 
+}
+#Vanille:hover {
+   box-shadow: 0PX 0px 20px #676B21; 
+}
+
+/* Vive le CSS... 😭Il est 04:07 du matin help, un ptit robux svp😭🙏*/
+/*#Loup garou*/ 
