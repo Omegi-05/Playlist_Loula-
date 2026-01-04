@@ -34,7 +34,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+  z-index: 9999; /* comme ça c toujours au-dessus */
   transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
@@ -43,12 +43,12 @@ body {
   visibility: hidden;
 }
 
-.loader {
-  width: 80px;
-  height: 80px;
-  border: 8px solid rgba(58, 58, 58, 0.2);
-  border-top: 8px solid #000000;
-  border-radius: 50%;
+.loader { /*le vinyle qui tourne*/
+  width: 50px;
+  height: 50px;
+  border: 50px solid rgb(0, 0, 0);
+  border-top: 50px solid #000000a2;
+  border-radius: 100%;
   animation: spin 1s linear infinite;
 }
 
@@ -87,6 +87,7 @@ body {
   border-radius: 10px;
   margin-top: 2rem;
   overflow: hidden;
+  
 }
 
 /*la barre de chargeemnt*/
@@ -101,6 +102,26 @@ body {
 
 /*les etoiles on été faites sur Adobe Illustrator =￣ω￣= */
 /*les etoiles, etoile 1 avec 5 branches*/
+
+#star {
+  cursor: url("mouse_star_souris.png"), 24 24, pointer;
+}
+
+@media (min-width: 158px) {
+  #star {
+    width: 100px;
+    height: auto;
+  }
+}
+
+/* Taille pour PC (grande) */
+@media (min-width: 1024px) {
+  #star {
+    width: 200px;
+    height: auto;
+  }
+}
+
 .etoiles_star_1 {
   left: 20px;
   bottom: 10px;
@@ -194,7 +215,6 @@ body {
 }
 
 /*partie pour les playlist*/
-
 .container {
   position: absolute;
   width: 100%;
@@ -213,6 +233,25 @@ body {
   place-items: center;
 }
 
+/* Adaptation pour iPhone */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 15px;
+  }
+}
+
+/* Adaptation pour très petits écrans (iPhone SE, Nokia mdr) */
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: repeat(2, 120px);
+    grid-template-rows: repeat(3, 120px);
+    gap: 10px;
+  }
+}
+
+
 /*les boutons des playlist*/
 .button-image {
   width: 300px;
@@ -226,6 +265,20 @@ body {
 /* ptit tips de lien cursuer ("https://cur.cursors-4u.net/cursors/cur-11/cur1051.cur")*/
 }
 
+@media (max-width: 768px) {
+  .button-image {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (max-width: 480px) {
+  .button-image {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+
 .button {
   width: 300px;
   height: 300px;
@@ -235,6 +288,19 @@ body {
   transition: transform 0.3s ease;
     cursor: url("https://cur.cursors-4u.net/cursors/cur-11/cur1051.cur") 50 50, pointer;
 }
+@media (max-width: 768px) {
+  .button {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (max-width: 480px) {
+  .button {
+    width: 120px;
+    height: 120px;
+  }
+}
+
 
 .button:hover {
   transform: scale(1.1);
